@@ -1,0 +1,216 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+    color: #e4e4e7;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 60px 20px;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #a1a1aa;
+    margin-bottom: 25px;
+}
+
+.contact-links {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-links a {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #e4e4e7;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    background: rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+    transform: translateY(-2px);
+}
+
+.resume-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    border: none !important;
+}
+
+.resume-btn:hover {
+    opacity: 0.9;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.section h2 {
+    font-size: 1.5rem;
+    color: #667eea;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(102, 126, 234, 0.3);
+}
+
+.section p {
+    color: #a1a1aa;
+}
+
+.section a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.section a:hover {
+    text-decoration: underline;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+.skill-category h3 {
+    font-size: 1rem;
+    color: #e4e4e7;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.skill-category ul {
+    list-style: none;
+}
+
+.skill-category li {
+    padding: 6px 0;
+    color: #a1a1aa;
+    font-size: 0.95rem;
+    position: relative;
+    padding-left: 16px;
+}
+
+.skill-category li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    color: #667eea;
+}
+
+.projects {
+    display: grid;
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: rgba(102, 126, 234, 0.3);
+    transform: translateY(-3px);
+}
+
+.project-card h3 {
+    font-size: 1.1rem;
+    color: #e4e4e7;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.tech-tag {
+    display: inline-block;
+    padding: 4px 12px;
+    background: rgba(102, 126, 234, 0.15);
+    color: #667eea;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #52525b;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+    
+    .contact-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-links a {
+        width: 100%;
+        max-width: 250px;
+        text-align: center;
+    }
+    
+    .section {
+        padding: 20px;
+    }
+    
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
