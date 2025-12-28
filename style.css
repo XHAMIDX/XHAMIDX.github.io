@@ -214,3 +214,84 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
+/* New Styles */
+.contact-info {
+    margin-bottom: 20px;
+    color: #a1a1aa;
+    font-size: 0.95rem;
+}
+
+.contact-info a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.experience-item, .education-item {
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.experience-item:last-child, .education-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+
+.exp-header h3, .education-item h3 {
+    font-size: 1.1rem;
+    color: #e4e4e7;
+    font-weight: 600;
+}
+
+.date {
+    font-size: 0.9rem;
+    color: #667eea;
+}
+
+.company {
+    color: #a1a1aa;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #71717a;
+}
+
+.cert-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.cert-list li {
+    position: relative;
+    padding-left: 20px;
+    color: #a1a1aa;
+    font-size: 0.95rem;
+}
+
+.cert-list li::before {
+    content: '🏆';
+    position: absolute;
+    left: 0;
+    font-size: 0.8rem;
+    top: 4px;
+}
+
+.languages {
+    display: flex;
+    gap: 10px;
+}
